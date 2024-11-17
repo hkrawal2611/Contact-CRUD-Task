@@ -1,4 +1,4 @@
-import { AppDataSource } from "./data-source";
+import { AppDataSource } from "./data-source.js"; // Add `.js` if necessary
 import mainRoutes from './routes/main.routes'
 import cors from "cors";
 import express from 'express';

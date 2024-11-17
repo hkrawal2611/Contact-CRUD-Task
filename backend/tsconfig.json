@@ -1,19 +1,21 @@
 {
   "compilerOptions": {
-      "target": "ESNext",
-      "module": "CommonJS",
-      "outDir": "./dist",
-      "strict": true,
-      "esModuleInterop": true,
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "rootDir": "./src",
-      "sourceMap": true
-    },
-    "include": [
-      "src/**.ts"
-    ],
-    "exclude": [
-      "node_modules"
-    ]
+    "target": "ESNext",                  // Keep targeting modern JavaScript features
+    "module": "ESNext",                  // Use ES module syntax
+    "outDir": "./dist",                  // Output directory for compiled JS
+    "strict": true,                      // Enable strict type-checking options
+    "esModuleInterop": true,             // Allow default imports from CommonJS modules
+    "emitDecoratorMetadata": true,       // Required for class-transformer, TypeORM, etc.
+    "experimentalDecorators": true,      // Enable decorators for TypeScript
+    "rootDir": "./src",                  // Source files root
+    "sourceMap": true,                   // Include source maps for debugging
+    "moduleResolution": "node",          // Resolve modules in the Node.js style
+    "forceConsistentCasingInFileNames": true // Ensure consistent casing in file imports
+  },
+  "include": [
+    "src/**/*.ts"                        // Include all TypeScript files in the src directory
+  ],
+  "exclude": [
+    "node_modules"                       // Exclude dependencies
+  ]
 }
